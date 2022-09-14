@@ -10,11 +10,12 @@
     <title>www.EtecFoodControl</title>
   </head>
   <body>
-     <header>
+
+ <header>
    <nav>
     <a class="logo" href="index1.php">Etecs</a>
     <ul class="nav-list">
-      <li><a href="index1.php">Início</a></li>
+      <li><a href="">Início</a></li>
       <li><a href="">Pedidos</a></li>
       <li><a href="novo-aluno.php">Cadastro</a></li>
       <li><a href="listar-alunos.php">Lista de alunos</a></li>
@@ -24,35 +25,24 @@
  </header>
 
 <main>
-<h1>Cadastrar</h1>
+  <h1>Bem-vindos</h1>
 </main>
 
 <div class="container">
-     <h1>Novo aluno</h1>
+<h1>Inserir Cardápio</h1>
 
-    <div class="form">
-    <form action="?page=salvar" method="POST">
-    <input type="hidden" name="acao" value="cadastrar"><br><br>
-     
-          <label for="RM">RM</label>
-          <input type="text" id="name" name="rm" class="form-control"><br>
 
-          <label for="Nome">Nome</label>
-          <input type="text" id="name" name="nome" class="form-control"><br>
+
+  <form action="insert food">
+    <label for="Comida">Comida:</label>
+    <input type="text" id="comida" name="comida" placeholder="insira a comida"><br><br>
  
-          <label for="turma">Turma</label>
-          <input type="text" id="name" name="turma" class="form-control"><br>
-     
-          <button type="submit" class="btn btn-primary">Cadastrar</button>
-     </form>
-    </div>
-
-    <div class="form-image">
-      <img src="img/cadastro.svg" alt="cadastro Aluno">
-    </div>
+  
+    <input type="submit" value="Enviar">
+    </form>
 
 </div>
-     
-</body>
+   
+  </body>
 
 </html>

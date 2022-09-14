@@ -1,0 +1,155 @@
+* {
+    margin:0 ;
+    padding:0 ;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#ebc588;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+a:hover{
+ opacity: 0.7;
+
+}
+
+
+.logo{
+   /* background: url("../img/Logo etec invert.jpg") no-repeat 
+    center center;*/
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    height: 10vh;
+}
+
+
+main{
+    background: url("../img/etec background.png") no-repeat
+    center center;
+    background-size: cover;
+    display: flex;/*propriedade que deixa as contenções do objeto pai flexivel*/
+    justify-content: center;/*propriedade que alinha ao eixo X*/
+    align-items: center;/*propriedade que alinh ao eixo Y*/
+    height: 40vh;
+
+}
+
+.nav-list{
+    list-style: none;;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+h1{
+    color: black;
+    display: flex;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: 0.3s;
+}
+ 
+h1:hover{
+    opacity: 0.5;
+    animation: letter 2s;
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100vw;
+    height: 60vh;
+    justify-content: space-around;
+   /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);*/
+   /* justify-content: center;
+    align-items: center;*/
+    
+}
+
+img{
+    margin-top: 5px;
+    width: 80%;
+    height: 80%;
+}
+.form-image{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    animation: letter 2s;
+    animation-iteration-count: 2;
+   
+}
+
+
+form{
+    letter-spacing: 3px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-align:justify;
+}
+
+/*desenvolvimento
+.form-label{
+    font-family: 'Kaushan Script', "cursive";
+    font-size: 40px;
+    color: rgb(2, 2, 117);
+    margin-left:20px;
+
+}
+
+
+.form-control{
+    width: 20%;
+    margin-left: 20px;
+    background-color: yellow;
+    color: blue;
+    border: 2px solid blue;
+    transition-property: background-color;
+    transition-duration: 1s;
+
+}
+
+.form-control:hover{
+    background-color: rgb(2, 2, 117);
+    color: yellow;
+}
+*/
+
+
+@keyframes letter {
+    0%{transform:  translateY(0px);
+        
+    }
+
+    50%{
+        transform: translateY(20px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
